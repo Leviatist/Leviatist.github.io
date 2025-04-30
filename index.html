@@ -23,6 +23,27 @@
       text-decoration: underline;
       color: #ffffff; /* 悬停时变为白色 */
     }
+    .todo-block {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 8px;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .todo-block h2 {
+      color: #ffcc70;
+    }
+    .todo-block ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .todo-block li {
+      margin: 8px 0;
+    }
   </style>
 </head>
 <body>
@@ -30,5 +51,13 @@
   <a href="https://github.com/yourusername">GitHub</a>
   <a href="https://leetcode.cn/u/yourusername/">LeetCode</a>
   <a href="mailto:youremail@example.com">联系我</a>
+  <div class="todo-block">
+    <h2>📋 待办事务</h2>
+    <ul>
+      <li>完成 LeetCode 第 100 题</li>
+      <li>更新 GitHub 项目 README</li>
+      <li>发送邮件给团队</li>
+    </ul>
+  </div>
 </body>
 </html>
