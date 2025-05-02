@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: moveParticle 4s infinite ease-in-out;
+}
+
+@keyframes moveParticle {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(400px, 300px); }
+}

@@ -1,0 +1,30 @@
+/* icon_container.css */
+
+.icon-container {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+}
+
+.icon-link {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Make it round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow around the icon */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.2); /* Scale effect on hover */
+    background-color: #534750; /* Change background on hover */
+}
+
+.icon-link img {
+    width: 30px;
+    height: 30px;
+}
