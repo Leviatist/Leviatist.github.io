@@ -7,7 +7,7 @@ html, body {
   
   main {
     flex: 1;  /* 使 main 部分占据剩余空间 */
-  }
+    }
   
   footer {
     color: white;

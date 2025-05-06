@@ -1,0 +1,54 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* 初始隐藏 */
+    width: 250px;
+    height: 100%;
+    background-color: #227ebb;
+    transition: 0.3s;
+    z-index: 1000;
+    border-radius: 25px 0px 0px 25px;
+  }
+
+  #sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  #sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 25px 0px 0px 25px;
+  }
+
+  /* 触发区域样式 */
+  #sidebar-trigger {
+    position: absolute;
+    top: 0;
+    right: 0px; /* 让触发区域位于导航栏左边缘外 */
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer; /* 鼠标指针形状 */
+  }
+  
+  /* 鼠标悬停在触发区域时展开导航栏 */
+  #sidebar-trigger:hover + #sidebar {
+    right: 0; /* 展开导航栏 */
+  }
+
+  /* 鼠标悬停时展开 */
+  #sidebar-container:hover #sidebar {
+    right: 0; /* 鼠标悬停时展开 */
+  }
+
+  /* 左侧栏容器 */
+  #sidebar-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
