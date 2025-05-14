@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative; /* 使输入框和按钮可以相对定位 */
   }
   
   /* 搜索引擎切换样式 */
@@ -41,13 +42,16 @@
   
   /* 搜索输入框样式 */
   .search-input {
-    width: 70%;
+    height: 20px; /* 统一高度 */
+    width: 100%;
     padding: 10px 15px;
-    border: 2px solid #ddd;
-    border-radius: 25px 0 0 25px;
+    border: 5px solid #ddd;
+    border-radius: 25px;
     font-size: 16px;
     outline: none;
+    padding-right: 50px; /* 为按钮腾出空间 */
     transition: all 0.3s ease;
+    position: relative;
   }
   
   .search-input:focus {
@@ -57,14 +61,23 @@
   
   /* 搜索按钮样式 */
   .search-button {
-    padding: 10px 20px;
+    width: 50px; /* 设置按钮宽度 */
+    height: 50px; /* 设置按钮高度 */
     background-color: #4a90e2;
     color: white;
     border: none;
-    border-radius: 0 25px 25px 0;
+    border-radius: 50%; /* 圆形按钮 */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px; /* 适当增加字体大小 */
     transition: background-color 0.3s ease;
+    display: flex; /* 使用 flex 使图标居中 */
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* 绝对定位 */
+    right: 15px; /* 自动贴近右侧 */
+    top: 50%; /* 垂直居中 */
+    transform: translateY(-50%); /* 精确垂直居中 */
+    z-index: 1; /* 确保按钮在输入框之上 */
   }
   
   .search-button:hover {

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style/block/icon_container.css">
   <link rel="stylesheet" href="style/block/search_container.css">
   <link rel="stylesheet" href="style/block/sprite_container.css">
+  <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- 左侧导航栏容器 -->
@@ -22,7 +23,7 @@
     </div>
   </div>
   <main>
-    <h1>Lev's Cyber Nexus</h1>
+    <h1 id="title">Lev's Cyber Nexus</h1>
     <!-- 搜索框容器 -->
     <div class="search-container">
       <div class="engine-switch">
@@ -31,7 +32,7 @@
       </div>
       <form id="search-form" action="https://www.bing.com/search" method="get" target="_blank">
         <input type="text" name="q" placeholder="搜索..." class="search-input">
-        <button type="submit" class="search-button">搜索</button>
+        <button type="submit" class="search-button">🔎</button>
       </form>
     </div>
     <div class="icon-container">
@@ -53,9 +54,10 @@
         <img src="static/img/bilibili.png" alt="Gradient Background">
       </a>
     </div>
-    <div id="sprite" class="sprite" style="background-image: url('./static/img/sprite/0001.png'); left: 700px; top: 187px;"></div>
+    <div id="sprite_01" class="sprite" style="background-image: url('./static/img/sprite/0001.png');"></div>
     <script src="script/search.js"></script>
     <script src="script/sprite.js"></script>
+    <script src="script/syncPos.js"></script>
   </main>
   <footer>
     <p>© 2025 Leviatist. All rights reserved.</p>

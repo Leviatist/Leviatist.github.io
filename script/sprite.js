@@ -1,4 +1,4 @@
-const sprite = document.getElementById('sprite');
+const sprite = document.getElementById('sprite_01');
 
 const frameWidth = 16;
 const frameHeight = 16;
