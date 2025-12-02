@@ -1,9 +1,0 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-    background-image: url('../../static/img/background.png');
-    background-size: cover;       /* 背景图填满整个页面 */
-    background-position: center;  /* 居中显示 */
-    background-repeat: no-repeat; /* 不重复 */
-}
