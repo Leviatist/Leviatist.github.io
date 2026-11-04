@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>LEV'S SITE — Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stopwatch.css" />
+  </head>
+  <body>
+    <div class="stopwatch-page">
+      <a href="index.html" class="back-link">← Back</a>
+      <div class="stopwatch-layout">
+        <div class="stopwatch-center">
+          <div class="stopwatch-display" id="display">00:00:00.000</div>
+          <div class="stopwatch-buttons">
+            <button id="startBtn" class="btn btn-start">运行</button>
+            <button id="resetBtn" class="btn btn-reset">复位</button>
+          </div>
+        </div>
+        <div class="stopwatch-history">
+          <h3 class="history-title">记录榜</h3>
+          <div class="history-list" id="historyList"></div>
+        </div>
+      </div>
+    </div>
+    <script src="stopwatch.js" type="module"></script>
+  </body>
+</html>
