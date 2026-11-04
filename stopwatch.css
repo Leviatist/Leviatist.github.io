@@ -1,24 +1,24 @@
 .stopwatch-page {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #000000;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 24px 16px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .back-link {
-  align-self: flex-start;
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border: 2px solid #ffffff;
   border-radius: 8px;
   transition: all 0.2s ease;
-  margin-bottom: 24px;
+  align-self: flex-start;
+  margin: 16px 0 0 16px;
+  flex-shrink: 0;
 }
 
 .back-link:hover {
@@ -28,10 +28,9 @@
 
 .stopwatch-layout {
   display: flex;
-  width: 100%;
-  max-width: 1200px;
   flex: 1;
-  gap: 32px;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .stopwatch-center {
@@ -40,30 +39,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 0;
+  padding: 16px;
+  gap: 24px;
 }
 
 .stopwatch-display {
-  font-size: clamp(4rem, 12vw, 10rem);
+  font-size: clamp(3rem, 9vw, 8rem);
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: #ffffff;
   text-align: center;
-  line-height: 1.2;
-  padding: 32px 0;
+  line-height: 1.1;
+  padding: 24px 32px;
   user-select: none;
   border: 2px solid #ffffff;
   border-radius: 16px;
   background: #111111;
   width: 100%;
-  max-width: 800px;
+  max-width: 70vw;
+  box-sizing: border-box;
 }
 
 .stopwatch-buttons {
   display: flex;
   gap: 20px;
-  margin-top: 32px;
+  flex-shrink: 0;
 }
 
 .btn {
@@ -107,10 +109,11 @@
   width: 280px;
   flex-shrink: 0;
   border-left: 2px solid #ffffff;
-  padding-left: 24px;
   display: flex;
   flex-direction: column;
-  max-height: 80vh;
+  padding: 16px 20px;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .history-title {
@@ -121,11 +124,13 @@
   border-bottom: 2px solid #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  flex-shrink: 0;
 }
 
 .history-list {
   overflow-y: auto;
   flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -188,12 +193,11 @@
     width: 100%;
     border-left: none;
     border-top: 2px solid #ffffff;
-    padding-left: 0;
-    padding-top: 24px;
-    max-height: 40vh;
+    max-height: 35vh;
   }
 
   .stopwatch-display {
     font-size: clamp(2.5rem, 10vw, 5rem);
+    max-width: 95vw;
   }
 }
